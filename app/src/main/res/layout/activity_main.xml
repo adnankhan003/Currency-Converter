@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="271dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="70dp"
+        android:background="#FACB3D"
+        android:fontFamily="@font/abhaya_libre"
+        android:onClick="rupToPou"
+        android:text="@string/rupee_to_pound"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="271dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="70dp"
+        android:background="#FACB3D"
+        android:fontFamily="@font/abhaya_libre"
+        android:onClick="dolToRup"
+        android:text="@string/dollar_to_rupee"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="271dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="70dp"
+        android:background="#FACB3D"
+        android:fontFamily="@font/abhaya_libre"
+        android:onClick="rupToDol"
+        android:text="@string/rupee_to_dollar"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputText" />
+
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="38dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/currency_converter"
+        android:textColor="#FF9800"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/outputImage"
+        android:layout_width="272dp"
+        android:layout_height="196dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="63dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outputText"
+        app:srcCompat="@drawable/moneymainnn"
+        android:contentDescription="@string/todo" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="89dp"
+        android:ems="10"
+        android:background="@drawable/input_text"
+        android:gravity="center"
+        android:hint="@string/type_here_to_convert"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHighlight="#F44336"
+        android:textColorHint="#FF4D07"
+        android:textColorLink="#000000"
+        android:autofillHints="none"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outputImage" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="271dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="70dp"
+        android:background="#FACB3D"
+        android:fontFamily="@font/abhaya_libre"
+        android:onClick="pouToRup"
+        android:text="@string/pound_to_rupee"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Money Converter App</string>
+    <string name="pound_to_rupee">Pound to Rupee</string>
+    <string name="type_here_to_convert">Type here to convert...</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="rupee_to_dollar">Rupee to Dollar</string>
+    <string name="dollar_to_rupee">Dollar to Rupee</string>
+    <string name="rupee_to_pound">Rupee to Pound</string>
+    <string name="todo">TODO</string>
+</resources>
